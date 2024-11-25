@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.11"
 web3 = "^7.6.0"
 flask = "^3.1.0"
+python-dotenv = "^1.0.1"
 
 
 [build-system]

@@ -18,6 +18,9 @@ Smart contract (compound) -> events (Borrow, Mint) -> rpc/infura -> follow -> da
 from flask import Flask, jsonify
 from web3 import Web3
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 infura_url = os.getenv('INFURA_URL')
