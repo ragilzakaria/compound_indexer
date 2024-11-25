@@ -40,7 +40,8 @@ class UserPointsRoute(Resource):
         # Notes:
         # For creating:
         
-        from app import db, 
+        from app import db
+        from app.models import UserPoints
         user = UserPoints(address='0x1234567890abcdef', points=50)
         db.session.add(user)
         db.session.commit()
